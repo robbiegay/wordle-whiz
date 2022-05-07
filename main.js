@@ -1,12 +1,12 @@
 
-let testWords = ["which",
-    "there",
-    "their",
-    "about",
-    "would",
-    "these",
-    "other",
-    "words"];
+// let testWords = ["which",
+//     "there",
+//     "their",
+//     "about",
+//     "would",
+//     "these",
+//     "other",
+//     "words"];
 
 let wordsList = [];
 
@@ -51,7 +51,7 @@ function getHint() {
 
     var validWords = [];
 
-    testWords.forEach(x => {
+    wordsList.forEach(x => {
         if (re.test(x)) {
             validWords.push(x);
         }
