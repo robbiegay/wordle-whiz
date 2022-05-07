@@ -1,13 +1,3 @@
-
-// let testWords = ["which",
-//     "there",
-//     "their",
-//     "about",
-//     "would",
-//     "these",
-//     "other",
-//     "words"];
-
 let wordsList = [];
 
 fetch('words.txt')
@@ -35,6 +25,8 @@ let run = document.querySelector('.run');
 run.addEventListener('click', getHint);
 
 function getHint() {
+    results.textContent = "";
+
     var l1 = letterOne.value;
     var l2 = letterTwo.value;
     var l3 = letterThree.value;
@@ -76,7 +68,6 @@ function getHint() {
         grayLetterArray.forEach(x => {
             if (word.includes(x)) {
                 hasInvalidLetter = true;
-                // break;
             }
         });
 
@@ -87,51 +78,5 @@ function getHint() {
 
     resultsString = resultsString.slice(0, resultsString.length - 2);
     results.textContent = resultsString;
+    resultsString = "";
 }
-
-
-
-
-
-
-
-// public string readToString()
-// {
-// 	var path = @"C:\Users\rgay\Documents\LINQPad Queries\personal\wordle-hints\5-letter-words";
-// 	return System.IO.File.ReadAllText(path);
-// }
-
-
-
-
-// let customName = document.getElementById('customname');
-// let randomize = document.querySelector('.randomize');
-
-// // Creates a random value for use in selecting an X, Y, Z array string
-
-// function randomValueFromArray(array){
-//   return array[Math.floor(Math.random()*array.length)];
-// }
-
-
-// // Links the clicking of button to the result() function
-
-// randomize.addEventListener('click', result);
-
-// // Places the storyText into newStory so that we can edit it
-
-// let newStory = storyText;
-
-// // Creates the result() function --> This runs when "generate" button is pressed
-
-
-
-//   // Convert to different units of measurement
-
-//   if(document.getElementById("uk").checked) {
-//     let weight = Math.round(300/14) + ' stone';
-//     let temperature =  Math.round((94 - 32) * (5 / 9)) + '° centigrade';
-//     newStory = newStory.replace('300 pounds', weight);
-//     newStory = newStory.replace('94° fahrenheit', temperature);
-//   }
-
