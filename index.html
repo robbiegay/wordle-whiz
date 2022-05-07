@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Robbie's Wordle Whiz</title>
+
+    <style>
+        body {
+            font-family: helvetica, sans-serif;
+            width: 350px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        div {
+            padding-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 25;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        Robbie's Wordle Whiz
+    </h1>
+
+    <h3>
+        Green Letters
+    </h3>
+    <p>
+        Enter any letters that you know their position:
+    </p>
+
+    <div>
+        <input id="letterOne" type="text" placeholder="">
+    </div>
+    <div>
+        <input id="letterTwo" type="text" placeholder="">
+    </div>
+    <div>
+        <input id="letterThree" type="text" placeholder="">
+    </div>
+    <div>
+        <input id="letterFour" type="text" placeholder="">
+    </div>
+    <div>
+        <input id="letterFive" type="text" placeholder="">
+    </div>
+
+    <h3>
+        Yellow Letters
+    </h3>
+    <p>
+        Enter any letters that you know are in the word but not their position:
+    </p>
+    <p>
+        Enter them in one string, without spaces. Ex. atjs
+    </p>
+
+    <div>
+        <input id="yellowLetters" type="text" placeholder="">
+    </div>
+
+    <h3>
+        Gray Letters
+    </h3>
+    <p>
+        Enter any letters that you know are NOT in the word:
+    </p>
+    <p>
+        Enter them in one string, without spaces. Ex. wlx
+    </p>
+
+    <div>
+        <input id="grayLetters" type="text" placeholder="">
+    </div>
+
+    <p class="results">
+        <!-- results go here :) -->
+    </p>
+
+    <div>
+        <button class="run">Get hint!</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
