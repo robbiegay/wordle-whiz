@@ -27,11 +27,11 @@ run.addEventListener('click', getHint);
 function getHint() {
     results.textContent = "";
 
-    var l1 = letterOne.value;
-    var l2 = letterTwo.value;
-    var l3 = letterThree.value;
-    var l4 = letterFour.value;
-    var l5 = letterFive.value;
+    var l1 = letterOne.value.trim().toLowerCase();
+    var l2 = letterTwo.value.trim().toLowerCase();
+    var l3 = letterThree.value.trim().toLowerCase();
+    var l4 = letterFour.value.trim().toLowerCase();
+    var l5 = letterFive.value.trim().toLowerCase();
     var pattern =
         (l1 !== "" ? l1 : "[a-z]") +
         (l2 !== "" ? l2 : "[a-z]") +
@@ -49,8 +49,8 @@ function getHint() {
         }
     });
 
-    var yellowLetterArray = yellowLetters.value.split("");
-    var grayLetterArray = garyLetters.value.split("");
+    var yellowLetterArray = yellowLetters.value.trim().toLowerCase().split("");
+    var grayLetterArray = garyLetters.value.trim().toLowerCase().split("");
 
     for (var i = 0; i < validWords.length; i++) {
         var word = validWords[i];
