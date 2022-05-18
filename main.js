@@ -80,3 +80,16 @@ function getHint() {
     results.textContent = resultsString;
     resultsString = "";
 }
+
+/*
+Removed a few words:
+pussy
+dildo
+dicks
+cunts
+fucks
+shits
+titty
+turdy
+turds
+*/
